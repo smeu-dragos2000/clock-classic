@@ -10,7 +10,7 @@
     
 }
 body {
-    background-color: rgb(117, 84, 57);
+    background-image: linear-gradient(to bottom right, rgb(196, 173, 154), rgb(117, 84, 57), rgb(54, 32, 15));
     
 }
 .container {
@@ -29,6 +29,8 @@ body {
     margin: auto;
     width: 600px;
     height: 600px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 40px black;
 }
 
 .background-clock {
@@ -65,6 +67,10 @@ body {
 .minute,
 .second {
     position: absolute;
+    z-index: 10;
+}
+.second {
+    z-index: 9;
 }
 
 .logo-1 {
